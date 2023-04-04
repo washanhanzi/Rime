@@ -1,0 +1,22 @@
+# Rime user dictionary
+#@/db_name	rime_ice
+#@/db_type	userdb
+#@/rime_version	1.8.5
+#@/tick	23
+#@/user_id	297085b6-7f83-4c9e-a1d9-f74a73622ec0
+de 	的	c=1 d=1 t=9
+gan jue 	感觉	c=1 d=1 t=18
+hai xing 	还行	c=1 d=1 t=21
+kan 	看	c=1 d=1 t=3
+kan kan 	看看	c=2 d=1.9802 t=11
+ne 	呢	c=1 d=1 t=6
+ni shuo 	你说	c=2 d=1.91851 t=22
+pi fu 	皮肤	c=4 d=3.89704 t=20
+shi bu shi 	是不是	c=1 d=1 t=23
+shi shi 	试试	c=2 d=1.94176 t=14
+wo 	我	c=1 d=1 t=17
+wo lai 	我来	c=1 d=1 t=1
+xin 	新	c=2 d=1.96561 t=15
+xin de 	新的	c=1 d=1 t=12
+zen me yang 	怎么样	c=1 d=1 t=4
+zhe ge 	这个	c=1 d=1 t=19
