@@ -1,6 +1,7 @@
 # Rime default settings
 # encoding: utf-8
 
+config_version: "2023-03-03"
 
 # 要比共享目录的同名文件的 config_version 大才可以生效
 config_version: '2024-02-05'
@@ -19,13 +20,11 @@ schema_list:
   - schema: double_pinyin_flypy    # 小鹤双拼
   - schema: double_pinyin_ziguang  # 紫光双拼
 
-
 # 菜单
 menu:
-  page_size: 5  # 候选词个数
+  page_size: 5 # 候选词个数
   # alternative_select_labels: [ ①, ②, ③, ④, ⑤, ⑥, ⑦, ⑧, ⑨, ⑩ ]  # 修改候选项标签
   # alternative_select_keys: ASDFGHJKL  # 如编码字符占用数字键，则需另设选字键
-
 
 # 方案选单相关
 switcher:
@@ -35,7 +34,8 @@ switcher:
     - Control+grave
     - Control+Shift+grave
     # - Alt+grave
-  save_options:  # 开关记忆（方案中的 switches），从方案选单（而非快捷键）切换时会记住的选项，需要记忆的开关不能设定 reset
+    - Control+Shift+grave
+  save_options:  # 开关记忆，从方案选单（而非快捷键）切换时会记住的选项，需要记忆的开关不能设定 reset
     - ascii_punct
     - traditionalization
     - emoji
@@ -44,7 +44,6 @@ switcher:
   fold_options: true            # 呼出时是否折叠，多方案时建议折叠 true ，一个方案建议展开 false
   abbreviate_options: true      # 折叠时是否缩写选项
   option_list_separator: ' / '  # 折叠时的选项分隔符
-
 
 # 中西文切换
 #
@@ -60,14 +59,14 @@ switcher:
 # clear        清除未上屏内容，然后切换到英文
 # inline_ascii 切换到临时英文模式，按回车上屏后回到中文状态
 # noop         屏蔽快捷键，不切换中英，但不要屏蔽 CapsLock
-ascii_composer:
-  good_old_caps_lock: true  # true | false
-  switch_key:
-    Caps_Lock: clear      # commit_code | commit_text | clear
-    Shift_L: commit_code  # commit_code | commit_text | inline_ascii | clear | noop
-    Shift_R: noop         # commit_code | commit_text | inline_ascii | clear | noop
-    Control_L: noop       # commit_code | commit_text | inline_ascii | clear | noop
-    Control_R: noop       # commit_code | commit_text | inline_ascii | clear | noop
+# ascii_composer:
+#   good_old_caps_lock: true  # true | false
+#   switch_key:
+#     Caps_Lock: clear  # commit_code | commit_text | clear
+#     Shift_L: noop     # commit_code | commit_text | inline_ascii | clear | noop
+#     Shift_R: noop     # commit_code | commit_text | inline_ascii | clear | noop
+#     Control_L: noop   # commit_code | commit_text | inline_ascii | clear | noop
+#     Control_R: noop   # commit_code | commit_text | inline_ascii | clear | noop
 
 
 ###################################################################################
@@ -163,7 +162,6 @@ recognizer:
     underscore: "^[A-Za-z]+_.*"  # 下划线不上屏
     # url_2: "^[A-Za-z]+[.].*"   # 句号不上屏，支持 google.com abc.txt 等网址或文件名，使用句号翻页时需要注释掉
     # colon: "^[A-Za-z]+:.*"     # 冒号不上屏
-
 
 # 快捷键
 key_binder:
